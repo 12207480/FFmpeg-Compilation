@@ -56,11 +56,10 @@ https://github.com/kolyvan/kxmovie/issues/125
  -  git clone git://github.com/kolyvan/kxtorrent.git kxmovie
 
 - 配置编译ffmpeg
-cd kxmovie
-git submodule update --init
-rake
-
-`git submodule update --init`超级无敌慢
+  -  cd kxmovie
+  -  git submodule update --init
+  -  rake
+  - `git submodule update --init`超级无敌慢
 
 #参考链接：
 
