@@ -6,9 +6,12 @@
 但是向来编译FFmpeg都是好复杂好容易崩溃的事情，现在好了，有yasm，FFmpeg-iOS-build-script这些大神弄出来的东西帮我们简化工作，直接搞到播放视频，播放直播的任务:
 
 
+PS:编译后的包邮189M，太大了，大家按着步骤走也可以运行Demo的
+
+
 #方法A
 ###用脚本形式来生成ffmpeg所需要的静态库跟源文件
-
+0.git clone git://github.com/kolyvan/kxtorrent.git kxmovie 或者下载 :kxmovie:https://github.com/kolyvan/kxmovie
 1.安装装yasm，指令：sudo curl http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz >yasm.tar.gz
 2.下载https://github.com/libav/gas-preprocessor到/usr/bin 
   （`可能出现这个错误GNU assembler not found, install/update gas-preprocessor,其实第三步会自动下载gas-preprocessor,第二步可以去掉,网上的教程都是旧的`）
