@@ -11,17 +11,17 @@ PS:编译后的包大小有189M，太大了，大家按着步骤走也可以运�
 
 #方法A
 ###用脚本形式来生成ffmpeg所需要的静态库跟源文件
-0.git clone git://github.com/kolyvan/kxtorrent.git kxmovie 或者下载 :kxmovie:https://github.com/kolyvan/kxmovie
-1.安装装yasm，指令：sudo curl http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz >yasm.tar.gz
-2.下载https://github.com/libav/gas-preprocessor到/usr/bin 
+- git clone git://github.com/kolyvan/kxtorrent.git kxmovie 或者下载 :kxmovie:https://github.com/kolyvan/kxmovie
+- 安装装yasm，指令：sudo curl http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz >yasm.tar.gz
+- 下载https://github.com/libav/gas-preprocessor到/usr/bin 
   （`可能出现这个错误GNU assembler not found, install/update gas-preprocessor,其实第三步会自动下载gas-preprocessor,第二步可以去掉,网上的教程都是旧的`）
-3.下载脚本文件kewlbear/FFmpeg-iOS-build-script 运行 `./build-ffmpeg.sh
+- 下载脚本文件kewlbear/FFmpeg-iOS-build-script 运行 `./build-ffmpeg.sh
 `,将会把所有架构所需的文件都编译打包完整,如图。
 
 ![](http://7xo1qe.com1.z0.glb.clouddn.com/git%2Fkx_thin.png)
 
 
-4.把FFmpeg-iOS这个包含所有架构的文件添加到kxmovie里，并添加必要的框架
+- 把FFmpeg-iOS这个包含所有架构的文件添加到kxmovie里，并添加必要的框架
 
 
 ![FFmpeg-iOS1](http://7xo1qe.com1.z0.glb.clouddn.com/git%2Fkx_total.png)
@@ -30,7 +30,7 @@ PS:编译后的包大小有189M，太大了，大家按着步骤走也可以运�
 
 ![FFmpeg-iOS2](http://7xo1qe.com1.z0.glb.clouddn.com/git%2Fkx_frameowork_s.png)
 
-5.编译运行Demo
+- 编译运行Demo
 
   -	蜗壳是本地的，普通网络的
   
@@ -42,10 +42,10 @@ PS:编译后的包大小有189M，太大了，大家按着步骤走也可以运�
 
 
 ##可能出现的错误:
-1.GNU assembler not found, install/update gas-preprocessor:
+- GNU assembler not found, install/update gas-preprocessor:
 https://github.com/kewlbear/FFmpeg-iOS-build-script/issues/20
 
-2.XCode7.1: "Implicit declaration of function 'avpicture_deinterlace' is invalid in C99'":（答案是我写的)
+- XCode7.1: "Implicit declaration of function 'avpicture_deinterlace' is invalid in C99'":（答案是我写的)
 https://github.com/kolyvan/kxmovie/issues/125
 
 
@@ -53,9 +53,9 @@ https://github.com/kolyvan/kxmovie/issues/125
 #方法B
 
 ###官方方法
- 1）git clone git://github.com/kolyvan/kxtorrent.git kxmovie
+ -  git clone git://github.com/kolyvan/kxtorrent.git kxmovie
 
- 2）配置编译ffmpeg
+- 配置编译ffmpeg
 cd kxmovie
 git submodule update --init
 rake
