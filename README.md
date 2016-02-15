@@ -67,6 +67,8 @@ https://github.com/kolyvan/kxmovie/issues/125
 - FFmpeg-iOS-build-script：https://github.com/kewlbear/FFmpeg-iOS-build-script
 - 简易教程：http://blog.csdn.net/oqqquzi1234567/article/details/43152689
 - FFmpeg的编译,非kxmoive:http://www.cocoachina.com/ios/20150514/11827.html
+- 基于使用AsyncSocket实现RTSP协议(用RTSP+RTP来实现摄像头的实时监控):http://www.1000phone.net/thread-7784-1-5.html
+- CocoaAsyncSocket基础教程:http://www.1000phone.net/thread-7781-1-1.html
 
 
 
