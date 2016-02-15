@@ -64,9 +64,10 @@ rake
 
 #参考链接：
 
-https://github.com/kolyvan/kxmovie
-https://github.com/kewlbear/FFmpeg-iOS-build-script
-http://blog.csdn.net/oqqquzi1234567/article/details/43152689
+- kxmovie：https://github.com/kolyvan/kxmovie
+- FFmpeg-iOS-build-script：https://github.com/kewlbear/FFmpeg-iOS-build-script
+- 简易教程：http://blog.csdn.net/oqqquzi1234567/article/details/43152689
+- FFmpeg的编译,非kxmoive:http://www.cocoachina.com/ios/20150514/11827.html
 
 
 
