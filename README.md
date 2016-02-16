@@ -3,7 +3,14 @@
 大家都知道，要播放多种格式MP4,MOV, 视频流的rtmp,rtsp,还有直播格式的m3u8，是一件好蛋疼的事情，幸好:
 我们有FFmpeg:http://ffmpeg.org/，
 有FFmpeg的封装版KxMovie:https://github.com/kolyvan/kxmovie
-但是向来编译FFmpeg都是好复杂好容易崩溃的事情，现在好了，有yasm，FFmpeg-iOS-build-script这些大神弄出来的东西帮我们简化工作，直接搞到播放视频，播放直播的任务:
+##步骤一般是这样的
+- 1.编译FFmpeg，生成适合arm7,arm7s,arm64等架构的静态库跟源文件
+- 2.把编译好的文件放到项目里面
+- 3.项目是基于KXMovie的直接用OC使用，直接使用的用FFmpeg的C语言API
+	
+	
+##但是第一步编译FFmpeg都是好复杂好容易崩溃的事情:
+现在好了，有yasm，FFmpeg-iOS-build-script这些大神弄出来的东西帮我们简化工作，直接搞到播放视频，播放直播的任务:
 
 
 PS:编译后的包大小有189M，太大了，大家按着步骤走也可以运行Demo的
