@@ -1,8 +1,8 @@
 # FFmpeg 编译
 
 大家都知道，要播放多种格式MP4,MOV, 视频流的rtmp,rtsp,还有直播格式的m3u8，是一件好蛋疼的事情，幸好:
-我们有FFmpeg:http://ffmpeg.org/，
-有FFmpeg的封装版KxMovie:https://github.com/kolyvan/kxmovie
+-	我们有FFmpeg:http://ffmpeg.org/
+-	有FFmpeg的封装版KxMovie:https://github.com/kolyvan/kxmovie
 ##步骤一般是这样的
 - 1.编译FFmpeg，生成适合arm7,arm7s,arm64等架构的静态库跟源文件
 - 2.把编译好的文件放到项目里面
